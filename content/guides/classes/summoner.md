@@ -1239,6 +1239,7 @@ builds:
           Core priority is Amplified Entwinement > Elemental Entwinement > Amplified Resonance.
           Minimum: Sun 14 Moon 14 Star 10.
         priorities:
+          - The goal is to get around 250 spec, adjust your ark passive as needed depending on your personal gear circumstance.
           - Keep your pet summons active at all times.
           - Pre-summon Maririn, Pauru, and Shurdi before entering combat whenever possible.
           - Use Winged Spirit in the circle before starting a raid to precast your Destiny buff.
@@ -1362,22 +1363,22 @@ builds:
             priority: 1
           - skill: Pauru
             type: damage
-            priority: 2
+            priority: 1
           - skill: Elcid
             type: damage
-            priority: 3
+            priority: 2
           - skill: Shurdi
             type: damage
-            priority: 4
+            priority: 3
           - skill: Steed Charge
             type: damage
-            priority: 5
+            priority: 4
           - skill: Winged Spirit
             type: damage
-            priority: 6
+            priority: 4
           - skill: Fleeting Gale Bird
             type: damage
-            priority: 7
+            priority: 4
           - skill: Water Elemental
             type: cooldown
             priority: 1
@@ -1386,57 +1387,54 @@ builds:
             priority: 2
           - skill: Fleeting Gale Bird
             type: cooldown
-            priority: 3
+            priority: 2
           - skill: Winged Spirit
             type: cooldown
-            priority: 4
+            priority: 3
         dps_distribution:
           - name: Maririn
-            dmg: 18.4
-          - name: Pauru
-            dmg: 13.4
-          - name: Elcid
-            dmg: 11.4
-          - name: Igna
-            dmg: 11.1
-          - name: Winged Spirit
-            dmg: 10.7
-          - name: Shurdi
-            dmg: 9.7
-          - name: Fleeting Gale Bird
-            dmg: 7.8
+            dmg: 15.88
           - name: Steed Charge
-            dmg: 7.2
-          - name: Judge Kelsion
-            dmg: 2.4
+            dmg: 15.71
+          - name: Igna
+            dmg: 12.58
+          - name: Pauru
+            dmg: 11.37
+          - name: Shurdi
+            dmg: 8.73
+          - name: Winged Spirit
+            dmg: 8.51
+          - name: Fleeting Gale Bird
+            dmg: 8.16
+          - name: Elcid
+            dmg: 7.23
+          - name: Kelsion
+            dmg: 6.71
+          - name: Water Elemental
+            dmg: 1.64
         rotation_sections:
           - title: Priority
             steps:
-              - Shurdi
-              - Igna
-              - Maririn
+              - Steed Charge
+              - Winged Spirit
+              - Water Elemental
+              - Fleeting Gale Bird
               - Pauru
               - Elcid
-              - Water Elemental
-              - Winged Spirit
-              - Steed Charge
-              - Fleeting Gale Bird
-          - title: Burst Rotation
+              - Shurdi
+          - title: Opening Rotation
             steps:
               - Shurdi
               - Maririn
               - Pauru
+              - Winged Spirit
               - Elcid
+              - Kelsion
               - Igna
               - Akir Burst
-              - Kelsion
-              - Igna - Breath
-              - Kelsion - Thundercrack
-              - Pauru - Flame Breath
-              - Water Elemental
-              - Winged Spirit
               - Steed Charge
               - Fleeting Gale Bird
+              - Water Elemental
         arkPassives:
           - name: Crit
             points: 6
@@ -1507,11 +1505,11 @@ builds:
             category: leap
             tier: 2
         arkPassiveTips:
-          - Swiftness 30 is mandatory. Aim for at least 250 Specialization, then put the remaining points into Crit; without Specialization on the bracelet, use 4 Specialization and 6 Crit.
-          - Tier 2 Evolution is flexible around your total Crit Rate; use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
+          - Swiftness 30 is mandatory. Aim for at least 250 Specialization, then put the remaining points into Crit without Specialization on the bracelet, use 4 Specialization and 6 Crit.
+          - Tier 2 Evolution is flexible around your total Crit Rate use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
       - name: Basic Training (333)
         difficulty: 1
-        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. Highest damage potential with flexible stat allocation. This Ark Grid setup has a general buff to all its skills, but Tactical Command itself nerfs the Command Skill damage of Maririn on <tripod>Stagger Command</tripod>. Maririn's Command Skill is only used for stagger checks.
+        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. A more passive playstyle where you will not be utilizing your pets active abilities. Very comfortable to play and forgiving.
         stats: Crit 6/30, Specialization 4/30, Swiftness 30/30
         arkgrid_cores: Basic Training + Ever-Changing Gale + Tactical Command
         arkgrid_prose: |-
@@ -1519,13 +1517,14 @@ builds:
           Minimum: Sun 14 Moon 14 Star 10.
         priorities:
           - Keep your pet summons active at all times.
-          - Only resummon your pets when their summon duration expires, as they have a wind-up time before they start attacking after being summoned.
-          - Akir Burst pauses summon timers via Elemental Burst, so pets don't need to be resummoned strictly off cooldown.
-          - Keep Shurdi active at all times, but not necessarily summon him off cooldown.
-          - Refresh Akir Burst as soon as the buff ends.
-          - Do not use Maririn's Command Skill, as it does no damage.
-          - Reposition Winged Spirit and Elcid when the boss moves.
-          - Keep high uptime on synergy skills for party benefit.
+          - Pre-summon Maririn, Pauru, and Shurdi before entering combat whenever possible.
+          - There is no strict rotation and its more priority based. So use Fleeting Gale Bird, Steed Charge, Winged Spirit, and Water Elemental off cooldown while letting your pets passively damage the boss.
+          - Akir Burst should be used frequently but aim to use it when 6 orbs are filled up, an easy way to tell is to check if the Jahia & Ligheas icon lights up. When it does use Akir Burst.
+          - Akir Burst will refresh all your summons duration when cast.
+          - Do not use Maririn or Pauru's Command Skills for damage. Maririn's Command Skill should only be used for stagger checks and Pauru's only when extra Weak Point Destruction is needed.
+          - Keep Shurdi active at all times, but with its long duration and frequent Akir Burst refreshes you do not need to spam it off cooldown.
+          - Elcid cannot move as she has no legs, if the boss moves make sure to resummon her to keep applying your synergy as well as a decent ammount of DPS.
+          - Fleeting Gale Bird is your highest priority normal skill as your pets basic attacks will constantly lower its cooldown.
         skills:
           - name: Steed Charge
             level: 11
@@ -1642,22 +1641,22 @@ builds:
             priority: 1
           - skill: Pauru
             type: damage
-            priority: 2
+            priority: 1
           - skill: Elcid
             type: damage
-            priority: 3
+            priority: 2
           - skill: Shurdi
             type: damage
-            priority: 4
+            priority: 3
           - skill: Steed Charge
             type: damage
-            priority: 5
+            priority: 4
           - skill: Winged Spirit
             type: damage
-            priority: 6
+            priority: 4
           - skill: Fleeting Gale Bird
             type: damage
-            priority: 7
+            priority: 4
           - skill: Water Elemental
             type: cooldown
             priority: 1
@@ -1666,57 +1665,53 @@ builds:
             priority: 2
           - skill: Fleeting Gale Bird
             type: cooldown
-            priority: 3
+            priority: 2
           - skill: Winged Spirit
             type: cooldown
-            priority: 4
+            priority: 3
         dps_distribution:
-          - name: Maririn
-            dmg: 18.4
-          - name: Pauru
-            dmg: 13.4
-          - name: Elcid
-            dmg: 11.4
-          - name: Igna
-            dmg: 11.1
-          - name: Winged Spirit
-            dmg: 10.7
-          - name: Shurdi
-            dmg: 9.7
           - name: Fleeting Gale Bird
-            dmg: 7.8
+            dmg: 20.90
+          - name: Maririn
+            dmg: 19.85
+          - name: Igna
+            dmg: 12.78
+          - name: Pauru
+            dmg: 8.39
+          - name: Elcid
+            dmg: 7.76
+          - name: Shurdi
+            dmg: 7.16
+          - name: Kelsion
+            dmg: 6.35
           - name: Steed Charge
-            dmg: 7.2
-          - name: Judge Kelsion
-            dmg: 2.4
+            dmg: 5.66
+          - name: Winged Spirit
+            dmg: 4.79
+          - name: Water Elemental
+            dmg: 0.99
         rotation_sections:
           - title: Priority
             steps:
-              - Shurdi
-              - Igna
-              - Maririn
-              - Pauru
-              - Elcid
-              - Water Elemental
-              - Winged Spirit
-              - Steed Charge
               - Fleeting Gale Bird
-          - title: Burst Rotation
+              - Steed Charge
+              - Winged Spirit
+              - Water Elemental
+              - Elcid
+              - Shurdi
+          - title: Opening Rotation
             steps:
               - Shurdi
+              - Elcid
               - Maririn
               - Pauru
-              - Elcid
+              - Kelsion
               - Igna
               - Akir Burst
-              - Kelsion
-              - Igna - Breath
-              - Kelsion - Thundercrack
-              - Pauru - Flame Breath
-              - Water Elemental
-              - Winged Spirit
-              - Steed Charge
               - Fleeting Gale Bird
+              - Steed Charge
+              - Winged Spirit
+              - Water Elemental
         arkPassives:
           - name: Crit
             points: 6
@@ -1787,11 +1782,11 @@ builds:
             category: leap
             tier: 2
         arkPassiveTips:
-          - Swiftness 30 is mandatory. Aim for at least 250 Specialization, then put the remaining points into Crit; without Specialization on the bracelet, use 4 Specialization and 6 Crit.
-          - Tier 2 Evolution is flexible around your total Crit Rate; use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
+          - Swiftness 30 is mandatory. Aim for at least 250 Specialization, then put the remaining points into Crit without Specialization on the bracelet, use 4 Specialization and 6 Crit.
+          - Tier 2 Evolution is flexible around your total Crit Rate use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
       - name: Enhanced Frenzy (221)
         difficulty: 3
-        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. Highest damage potential with flexible stat allocation. This Ark Grid setup has a general buff to all its skills, but Tactical Command itself nerfs the Command Skill damage of Maririn on <tripod>Stagger Command</tripod>. Maririn's Command Skill is only used for stagger checks.
+        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. A burst focused playstyle for CO. Your plan is to focus all your damage during your Akir Burst window at the cost of only being able to Akir Burst every 40 seconds thanks to your Destiny Buff. This means planning around boss patterns and burst windows becomes critical. This is the weakest of the three varaints for CO and should only be played out of personal preference.
         stats: Crit 10/30, Swiftness 30/30
         arkgrid_cores: Enhanced Burst + Burst Focus + Amplified Resonance
         arkgrid_prose: |-
@@ -1799,13 +1794,15 @@ builds:
           Minimum: Sun 14 Moon 14 Star 10.
         priorities:
           - Keep your pet summons active at all times.
-          - Only resummon your pets when their summon duration expires, as they have a wind-up time before they start attacking after being summoned.
-          - Akir Burst pauses summon timers via Elemental Burst, so pets don't need to be resummoned strictly off cooldown.
-          - Keep Shurdi active at all times, but not necessarily summon him off cooldown.
-          - Refresh Akir Burst as soon as the buff ends.
-          - Do not use Maririn's Command Skill, as it does no damage.
-          - Reposition Winged Spirit and Elcid when the boss moves.
-          - Keep high uptime on synergy skills for party benefit.
+          - Pre-summon Maririn, Pauru, and Shurdi before entering combat whenever possible.
+          - Your gauge is automatically refilled every 40 seconds from your Destiny effect, so you do not need to focus on building gauge with your normal skills.
+          - Use Winged Spirit right before Akir Burst so all of its damage lands inside the burst window without wasting time casting it during the buff.
+          - Akir Burst should be used every 40 seconds when your gauge is refilled, but try to line it up with boss damage windows whenever possible.
+          - Akir Burst will refresh all your summons duration when cast.
+          - Steed Charge is one of your strongest burst skills, so try to minimize cooldown loss and fit as many casts as possible inside Akir Burst.
+          - Pauru and Maririn's Command Skills can be used normally, and if possible try to fit Pauru's Command Skill inside Akir Burst.
+          - Keep Shurdi active at all times, but with its long duration and frequent Akir Burst refreshes you do not need to spam it off cooldown.
+          - Elcid cannot move as she has no legs, if the boss moves make sure to resummon her to keep applying your synergy as well as a decent ammount of DPS.
         skills:
           - name: Steed Charge
             level: 14
@@ -1921,22 +1918,22 @@ builds:
             priority: 1
           - skill: Pauru
             type: damage
-            priority: 2
+            priority: 1
           - skill: Elcid
             type: damage
-            priority: 3
+            priority: 2
           - skill: Shurdi
             type: damage
-            priority: 4
+            priority: 3
           - skill: Steed Charge
             type: damage
-            priority: 5
+            priority: 4
           - skill: Winged Spirit
             type: damage
-            priority: 6
+            priority: 4
           - skill: Fleeting Gale Bird
             type: damage
-            priority: 7
+            priority: 4
           - skill: Water Elemental
             type: cooldown
             priority: 1
@@ -1945,57 +1942,51 @@ builds:
             priority: 2
           - skill: Fleeting Gale Bird
             type: cooldown
-            priority: 3
+            priority: 2
           - skill: Winged Spirit
             type: cooldown
-            priority: 4
+            priority: 3
         dps_distribution:
           - name: Maririn
-            dmg: 18.4
-          - name: Pauru
-            dmg: 13.4
-          - name: Elcid
-            dmg: 11.4
-          - name: Igna
-            dmg: 11.1
-          - name: Winged Spirit
-            dmg: 10.7
-          - name: Shurdi
-            dmg: 9.7
-          - name: Fleeting Gale Bird
-            dmg: 7.8
+            dmg: 14.20
           - name: Steed Charge
-            dmg: 7.2
-          - name: Judge Kelsion
-            dmg: 2.4
+            dmg: 13.83
+          - name: Igna
+            dmg: 12.66
+          - name: Pauru
+            dmg: 11.57
+          - name: Elcid
+            dmg: 10.33
+          - name: Shurdi
+            dmg: 10.23
+          - name: Fleeting Gale Bird
+            dmg: 7.74
+          - name: Winged Spirit
+            dmg: 7.20
+          - name: Kelsion
+            dmg: 5.07
+          - name: Water Elemental
+            dmg: 3.05
         rotation_sections:
           - title: Priority
             steps:
-              - Shurdi
-              - Igna
-              - Maririn
-              - Pauru
-              - Elcid
-              - Water Elemental
               - Winged Spirit
+              - Akir Burst
               - Steed Charge
               - Fleeting Gale Bird
+              - Water Elemental
+              - Pauru
+              - Elcid
+              - Shurdi
           - title: Burst Rotation
             steps:
-              - Shurdi
-              - Maririn
-              - Pauru
-              - Elcid
-              - Igna
-              - Akir Burst
-              - Kelsion
-              - Igna - Breath
-              - Kelsion - Thundercrack
-              - Pauru - Flame Breath
-              - Water Elemental
               - Winged Spirit
+              - Akir Burst
               - Steed Charge
               - Fleeting Gale Bird
+              - Water Elemental
+              - Pauru
+              - Steed Charge
         arkPassives:
           - name: Crit
             points: 10
@@ -2063,6 +2054,6 @@ builds:
             tier: 2
         arkPassiveTips:
           - Swiftness 30 is mandatory. 221 does not need Specialization for gauge generation, so put the remaining 10 Evolution stat points into Crit.
-          - Tier 2 Evolution is flexible around your total Crit Rate; use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
+          - Tier 2 Evolution is flexible around your total Crit Rate use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
 
 ---
