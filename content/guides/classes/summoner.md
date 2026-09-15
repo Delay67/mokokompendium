@@ -1232,35 +1232,36 @@ builds:
       - name: Elemental Entwinement (111)
         recommended: true
         difficulty: 2
-        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. Highest damage potential with flexible stat allocation. This Ark Grid setup has a general buff to all its skills, but Tactical Command itself nerfs the Command Skill damage of Maririn on <tripod>Stagger Command</tripod>. Maririn's Command Skill is only used for stagger checks.
-        stats: Crit 10/30, Specialization 6/30, Swiftness 24/30
-        arkgrid_cores: Elemental Entwinement + Amplified Entwinement + Tactical Command
+        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. This Ark Grid setup has a general buff to all its skills and requires good uptime to maintain its damage. You will be cycling between your normal skills to build gauge as your pets passively damage the boss.
+        stats: Crit 6/30, Specialization 4/30, Swiftness 30/30
+        arkgrid_cores: Elemental Entwinement + Amplified Entwinement + Amplified Resonance
         arkgrid_prose: |-
-          Core priority is Amplified Entwinement > Elemental Entwinement > Tactical Command.
+          Core priority is Amplified Entwinement > Elemental Entwinement > Amplified Resonance.
           Minimum: Sun 14 Moon 14 Star 10.
         priorities:
           - Keep your pet summons active at all times.
-          - Only resummon your pets when their summon duration expires, as they have a wind-up time before they start attacking after being summoned.
-          - Akir Burst pauses summon timers via Elemental Burst, so pets don't need to be resummoned strictly off cooldown.
-          - Keep Shurdi active at all times, but not necessarily summon him off cooldown.
-          - Refresh Akir Burst as soon as the buff ends.
-          - Do not use Maririn's Command Skill, as it does no damage.
-          - Reposition Winged Spirit and Elcid when the boss moves.
-          - Keep high uptime on synergy skills for party benefit.
+          - Pre-summon Maririn, Pauru, and Shurdi before entering combat whenever possible.
+          - Use Winged Spirit in the circle before starting a raid to precast your Destiny buff.
+          - There is no strict rotation and its more priority based. So use Steed Charge, Winged Spirit, Water Elemental, and Fleeting Gale Bird off cooldown while spamming any pet actives that come up.
+          - Akir Burst should be used frequently but aim to use it when 6 orbs are filled up, an easy way to tell is to check if the Jahia & Ligheas icon lights up. When it does use Akir Burst.
+          - Akir Burst will refresh all your summons duration when cast.
+          - Pauru's Command Skill should be used regularly but if you are outside of Akir Burst and will enter shortly holding it for a few seconds is acceptable.
+          - Elcid cannot move as she has no legs, if the boss moves make sure to resummon her to keep applying your synergy as well as a decent ammount of DPS.
         skills:
           - name: Steed Charge
-            level: 11
+            level: 14
             tripods:
-              - Stormlike Gallop
+              - Burning Sprint
               - Weak Point Detection
               - Destruction Charger
             rune: Wealth
             rune_rarity: epic
             notes: |-
-              **High Stagger Skill, Meter Generation Skill**
-              - <tripod>Burning Sprint</tripod> can be used over <tripod>Stormlike Gallop</tripod> if you overcap on Crit Rate from using it.
+              **Main Damage Skill, High Stagger Skill, Meter Generation Skill**
+              - <tripod>Burning Sprint</tripod> is the standard tripod, while <tripod>Destruction Charger</tripod> increases the number of steeds for strong damage, stagger, and meter generation.
+              - Amplified Resonance heavily boosts this skill, so minimize cooldown loss whenever possible.
           - name: Fleeting Gale Bird
-            level: 11
+            level: 10
             tripods:
               - Accumulated Energy
               - Free Flight
@@ -1274,7 +1275,7 @@ builds:
             level: 13
             tripods:
               - Corrosive Explosion
-              - Homing Seeds
+              - Deadly Poison Seed
               - Elite Summoning
             rune: Wealth
             rune_rarity: epic
@@ -1282,9 +1283,9 @@ builds:
               **Main Damage Skill, Synergy Application**
               - <tripod>Corrosive Explosion</tripod> applies -12% defense down synergy on enemies.
               - Elcid is entirely stationary, so you may need to resummon her if the boss moves out of range.
-              - <tripod>Deadly Poison Seed</tripod> has higher DPS, but is a lot less consistent on highly mobile bosses.
+              - <tripod>Deadly Poison Seed</tripod> requires maintaining its stacks, so resummon Elcid promptly to keep both its damage and synergy active. <tripod>Homing Seeds</tripod> can be used instead on highly mobile bosses where maintaining stacks is unreliable.
           - name: Pauru
-            level: 14
+            level: 12
             tripods:
               - Weak Point Detection
               - Atk. Power Enhancement
@@ -1293,20 +1294,21 @@ builds:
             rune_rarity: rare
             notes: |-
               **Main Damage Skill, Weak Point Destruction**
-              - Use the active skill off cooldown.
+              - Use the Command Skill regularly, but if Akir Burst is about to start, holding it briefly to land inside the burst window is acceptable.
           - name: Maririn
             level: 14
             tripods:
               - Atk. Power Enhancement
-              - Stagger Command
+              - Precision Fire
               - Elemental Blessing
             rune: Poison
             rune_rarity: legendary
             notes: |-
-              **Main Damage Skill, High Stagger Skill**
-              - Do not use the active skill off cooldown and only use it on stagger checks, as it does no damage due to Tactical Command core.
+              **Main Damage Skill**
+              - <tripod>Precision Fire</tripod> focuses Maririn on stronger basic attacks.
+              - Unlike 333, this setup does not suppress Maririn's Command Skill with Tactical Command, so it can still be used normally when needed.
           - name: Shurdi
-            level: 12
+            level: 11
             tripods:
               - Shining Growth
               - Bulky Shurdi
@@ -1314,9 +1316,9 @@ builds:
             rune: Bleed
             rune_rarity: legendary
             notes: |-
-              **Main Damage Skill, Self-Crit Rate buff, Destiny Activation**
+              **Main Damage Skill, Self-Crit Rate buff**
               - <tripod>Shining Growth</tripod> provides +11.8% Crit Rate to self, so prioritize maintaining its uptime.
-              - Shurdi applies the Destiny buff.
+              - Keep Shurdi active at all times however it has a long duration and with frequent Akir Bursts refreshing it you do not need to spam it off cooldown.
           - name: Winged Spirit
             level: 11
             tripods:
@@ -1326,9 +1328,8 @@ builds:
             rune: Wealth
             rune_rarity: rare
             notes: |-
-              **Minor Damage Skill**
-              - Long-lasting stationary summon.
-              - Be alert and reposition this skill as the boss moves.
+              **Damage Skill, Destiny Activation**
+              - Amplified Entwinement makes Winged Spirit trigger your Destiny Buff, so pre-cast it before entering combat.
           - name: Water Elemental
             level: 10
             tripods:
@@ -1341,6 +1342,7 @@ builds:
               **Meter Generation Skill, Weak Point Destruction, Counter**
               - <tripod>MP Recovery</tripod> provides MP to yourself. Keep this on cooldown at all times so you don't run out of mana.
               - This has the highest meter generation of all your skills.
+              - Gains an extra stack from Amplified Resonance.
           - name: Igna
             level_label: Hyper Awakening Technique
             notes: |-
@@ -1353,7 +1355,7 @@ builds:
               **Main Damage Skill**
               - Make sure you have Akir Burst when Kelsion is up, as Kelsion gains a huge damage boost from Akir Burst.
               - Use the Command Skill as soon as it comes up, as it does a lot of damage.
-              - Kelsion lasts for 24s, so you should be only using this when you know the boss will not be leaving in that period of time.
+              - Kelsion lasts for 16s, so use it when the boss will remain targetable for most of its duration.
         gems:
           - skill: Maririn
             type: damage
@@ -1437,19 +1439,23 @@ builds:
               - Fleeting Gale Bird
         arkPassives:
           - name: Crit
-            points: 10
-            category: evolution
-            tier: 1
-          - name: Specialization
             points: 6
             category: evolution
             tier: 1
-          - name: Swiftness
-            points: 24
+          - name: Specialization
+            points: 4
             category: evolution
             tier: 1
+          - name: Swiftness
+            points: 30
+            category: evolution
+            tier: 1
+          - name: Keen Sense
+            points: 2
+            category: evolution
+            tier: 2
           - name: Limit Break
-            points: 3
+            points: 1
             category: evolution
             tier: 2
           - name: Zealous Smite
@@ -1477,15 +1483,11 @@ builds:
             category: enlightenment
             tier: 2
           - name: Communication Enhancement
-            points: 1
+            points: 2
             category: enlightenment
             tier: 3
           - name: Elemental's Harmony
             points: 3
-            category: enlightenment
-            tier: 3
-          - name: Ancient Wind
-            points: 1
             category: enlightenment
             tier: 3
           - name: Elemental Burst
@@ -1505,15 +1507,15 @@ builds:
             category: leap
             tier: 2
         arkPassiveTips:
-          - Crit, Specialization and Swiftness can adjusted to your taste, but try to keep above 400 Crit, 400 Specialization and 1500 Swiftness, or less if you're not using Raid Captain, or using the Ancient Wind side node.
-          - Consider running Release Potential over Transcendent Power in a longer fight.
+          - Swiftness 30 is mandatory. Aim for at least 250 Specialization, then put the remaining points into Crit; without Specialization on the bracelet, use 4 Specialization and 6 Crit.
+          - Tier 2 Evolution is flexible around your total Crit Rate; use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
       - name: Basic Training (333)
         difficulty: 1
         description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. Highest damage potential with flexible stat allocation. This Ark Grid setup has a general buff to all its skills, but Tactical Command itself nerfs the Command Skill damage of Maririn on <tripod>Stagger Command</tripod>. Maririn's Command Skill is only used for stagger checks.
-        stats: Crit 10/30, Specialization 6/30, Swiftness 24/30
-        arkgrid_cores: Elemental Entwinement + Amplified Entwinement + Tactical Command
+        stats: Crit 6/30, Specialization 4/30, Swiftness 30/30
+        arkgrid_cores: Basic Training + Ever-Changing Gale + Tactical Command
         arkgrid_prose: |-
-          Core priority is Amplified Entwinement > Elemental Entwinement > Tactical Command.
+          Core priority is Basic Training > Ever-Changing Gale > Tactical Command.
           Minimum: Sun 14 Moon 14 Star 10.
         priorities:
           - Keep your pet summons active at all times.
@@ -1528,16 +1530,16 @@ builds:
           - name: Steed Charge
             level: 11
             tripods:
-              - Stormlike Gallop
+              - Burning Sprint
               - Weak Point Detection
               - Destruction Charger
             rune: Wealth
             rune_rarity: epic
             notes: |-
               **High Stagger Skill, Meter Generation Skill**
-              - <tripod>Burning Sprint</tripod> can be used over <tripod>Stormlike Gallop</tripod> if you overcap on Crit Rate from using it.
+              - <tripod>Burning Sprint</tripod> is the standard tripod, while <tripod>Destruction Charger</tripod> increases the number of steeds for strong stagger and meter generation.
           - name: Fleeting Gale Bird
-            level: 11
+            level: 14
             tripods:
               - Accumulated Energy
               - Free Flight
@@ -1546,12 +1548,14 @@ builds:
             rune_rarity: rare
             notes: |-
               **Main Damage Skill, Meter Generation Skill**
-              - You can build passive gauge from <tripod>Accumulated Energy</tripod> even without hitting any enemies.
+              - Basic Training and Ever-Changing Gale both heavily buff Fleeting Gale Bird's damage making it a main DPS skill.
+              - All your pets basic attacks will lower Fleeting Gale Bird's cooldown.
+              - Prioritize using this skill whenever it becomes available.
           - name: Elcid
             level: 13
             tripods:
               - Corrosive Explosion
-              - Homing Seeds
+              - Deadly Poison Seed
               - Elite Summoning
             rune: Wealth
             rune_rarity: epic
@@ -1559,9 +1563,9 @@ builds:
               **Main Damage Skill, Synergy Application**
               - <tripod>Corrosive Explosion</tripod> applies -12% defense down synergy on enemies.
               - Elcid is entirely stationary, so you may need to resummon her if the boss moves out of range.
-              - <tripod>Deadly Poison Seed</tripod> has higher DPS, but is a lot less consistent on highly mobile bosses.
+              - <tripod>Deadly Poison Seed</tripod> requires maintaining its stacks, so resummon Elcid promptly to keep both its damage and synergy active. <tripod>Homing Seeds</tripod> can be used instead on highly mobile bosses where maintaining stacks is unreliable.
           - name: Pauru
-            level: 14
+            level: 11
             tripods:
               - Weak Point Detection
               - Atk. Power Enhancement
@@ -1570,7 +1574,8 @@ builds:
             rune_rarity: rare
             notes: |-
               **Main Damage Skill, Weak Point Destruction**
-              - Use the active skill off cooldown.
+              - Basic Training and Tactical Command focus Pauru on its basic attacks, so do not use the Command Skill for damage.
+              - The Command Skill can still be used when its additional Weak Point Destruction is needed.
           - name: Maririn
             level: 14
             tripods:
@@ -1581,9 +1586,10 @@ builds:
             rune_rarity: legendary
             notes: |-
               **Main Damage Skill, High Stagger Skill**
-              - Do not use the active skill off cooldown and only use it on stagger checks, as it does no damage due to Tactical Command core.
+              - Tactical Command reduces Maririn's Command Skill damage by 90% but upgrades its stagger while heavily boosting Maririn's basic attacks.
+              - Only use the Command Skill for stagger checks otherwise let Maririn continue basic attacking.
           - name: Shurdi
-            level: 12
+            level: 13
             tripods:
               - Shining Growth
               - Bulky Shurdi
@@ -1591,11 +1597,11 @@ builds:
             rune: Bleed
             rune_rarity: legendary
             notes: |-
-              **Main Damage Skill, Self-Crit Rate buff, Destiny Activation**
+              **Main Damage Skill, Self-Crit Rate buff**
               - <tripod>Shining Growth</tripod> provides +11.8% Crit Rate to self, so prioritize maintaining its uptime.
-              - Shurdi applies the Destiny buff.
+              - Keep Shurdi active at all times; minor cooldown loss is acceptable due to its long summon duration.
           - name: Winged Spirit
-            level: 11
+            level: 10
             tripods:
               - Magick Enhancement
               - Thunder Spirit
@@ -1603,9 +1609,8 @@ builds:
             rune: Wealth
             rune_rarity: rare
             notes: |-
-              **Minor Damage Skill**
-              - Long-lasting stationary summon.
-              - Be alert and reposition this skill as the boss moves.
+              **Damage Skill**
+              - Strong damage skill so make sure to use it off cooldown.
           - name: Water Elemental
             level: 10
             tripods:
@@ -1630,7 +1635,7 @@ builds:
               **Main Damage Skill**
               - Make sure you have Akir Burst when Kelsion is up, as Kelsion gains a huge damage boost from Akir Burst.
               - Use the Command Skill as soon as it comes up, as it does a lot of damage.
-              - Kelsion lasts for 24s, so you should be only using this when you know the boss will not be leaving in that period of time.
+              - Kelsion lasts for 16s, so use it when the boss will remain targetable for most of its duration.
         gems:
           - skill: Maririn
             type: damage
@@ -1714,19 +1719,23 @@ builds:
               - Fleeting Gale Bird
         arkPassives:
           - name: Crit
-            points: 10
-            category: evolution
-            tier: 1
-          - name: Specialization
             points: 6
             category: evolution
             tier: 1
-          - name: Swiftness
-            points: 24
+          - name: Specialization
+            points: 4
             category: evolution
             tier: 1
+          - name: Swiftness
+            points: 30
+            category: evolution
+            tier: 1
+          - name: Keen Sense
+            points: 2
+            category: evolution
+            tier: 2
           - name: Limit Break
-            points: 3
+            points: 1
             category: evolution
             tier: 2
           - name: Zealous Smite
@@ -1754,15 +1763,11 @@ builds:
             category: enlightenment
             tier: 2
           - name: Communication Enhancement
-            points: 1
+            points: 2
             category: enlightenment
             tier: 3
           - name: Elemental's Harmony
             points: 3
-            category: enlightenment
-            tier: 3
-          - name: Ancient Wind
-            points: 1
             category: enlightenment
             tier: 3
           - name: Elemental Burst
@@ -1782,15 +1787,15 @@ builds:
             category: leap
             tier: 2
         arkPassiveTips:
-          - Crit, Specialization and Swiftness can adjusted to your taste, but try to keep above 400 Crit, 400 Specialization and 1500 Swiftness, or less if you're not using Raid Captain, or using the Ancient Wind side node.
-          - Consider running Release Potential over Transcendent Power in a longer fight.
+          - Swiftness 30 is mandatory. Aim for at least 250 Specialization, then put the remaining points into Crit; without Specialization on the bracelet, use 4 Specialization and 6 Crit.
+          - Tier 2 Evolution is flexible around your total Crit Rate; use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
       - name: Enhanced Frenzy (221)
         difficulty: 3
         description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. Highest damage potential with flexible stat allocation. This Ark Grid setup has a general buff to all its skills, but Tactical Command itself nerfs the Command Skill damage of Maririn on <tripod>Stagger Command</tripod>. Maririn's Command Skill is only used for stagger checks.
-        stats: Crit 10/30, Specialization 6/30, Swiftness 24/30
-        arkgrid_cores: Elemental Entwinement + Amplified Entwinement + Tactical Command
+        stats: Crit 10/30, Swiftness 30/30
+        arkgrid_cores: Enhanced Burst + Burst Focus + Amplified Resonance
         arkgrid_prose: |-
-          Core priority is Amplified Entwinement > Elemental Entwinement > Tactical Command.
+          Core priority is Enhanced Burst > Burst Focus > Amplified Resonance.
           Minimum: Sun 14 Moon 14 Star 10.
         priorities:
           - Keep your pet summons active at all times.
@@ -1803,18 +1808,19 @@ builds:
           - Keep high uptime on synergy skills for party benefit.
         skills:
           - name: Steed Charge
-            level: 11
+            level: 14
             tripods:
-              - Stormlike Gallop
+              - Burning Sprint
               - Weak Point Detection
               - Destruction Charger
             rune: Wealth
             rune_rarity: epic
             notes: |-
-              **High Stagger Skill, Meter Generation Skill**
-              - <tripod>Burning Sprint</tripod> can be used over <tripod>Stormlike Gallop</tripod> if you overcap on Crit Rate from using it.
+              **Main Damage Skill, High Stagger Skill**
+              - Amplified Resonance heavily boosts Steed Charge, making it one of your main burst-window skills.
+              - Minimize cooldown loss and aim to fit as many casts as possible into Akir Burst.
           - name: Fleeting Gale Bird
-            level: 11
+            level: 10
             tripods:
               - Accumulated Energy
               - Free Flight
@@ -1822,13 +1828,13 @@ builds:
             rune: Wealth
             rune_rarity: rare
             notes: |-
-              **Main Damage Skill, Meter Generation Skill**
-              - You can build passive gauge from <tripod>Accumulated Energy</tripod> even without hitting any enemies.
+              **Damage Skill**
+              - 221 receives its Ancient Energy on a fixed 40-second cycle, so Fleeting Gale Bird is used primarily for damage rather than gauge generation.
           - name: Elcid
-            level: 13
+            level: 12
             tripods:
               - Corrosive Explosion
-              - Homing Seeds
+              - Deadly Poison Seed
               - Elite Summoning
             rune: Wealth
             rune_rarity: epic
@@ -1836,7 +1842,7 @@ builds:
               **Main Damage Skill, Synergy Application**
               - <tripod>Corrosive Explosion</tripod> applies -12% defense down synergy on enemies.
               - Elcid is entirely stationary, so you may need to resummon her if the boss moves out of range.
-              - <tripod>Deadly Poison Seed</tripod> has higher DPS, but is a lot less consistent on highly mobile bosses.
+              - <tripod>Deadly Poison Seed</tripod> requires maintaining its stacks, so resummon Elcid promptly to keep both its damage and synergy active. <tripod>Homing Seeds</tripod> can be used instead on highly mobile bosses where maintaining stacks is unreliable.
           - name: Pauru
             level: 14
             tripods:
@@ -1847,20 +1853,21 @@ builds:
             rune_rarity: rare
             notes: |-
               **Main Damage Skill, Weak Point Destruction**
-              - Use the active skill off cooldown.
+              - Use the Command Skill regularly and prioritize landing it during Akir Burst when available.
           - name: Maririn
             level: 14
             tripods:
               - Atk. Power Enhancement
-              - Stagger Command
+              - Precision Fire
               - Elemental Blessing
             rune: Poison
             rune_rarity: legendary
             notes: |-
-              **Main Damage Skill, High Stagger Skill**
-              - Do not use the active skill off cooldown and only use it on stagger checks, as it does no damage due to Tactical Command core.
+              **Main Damage Skill**
+              - <tripod>Precision Fire</tripod> focuses Maririn on stronger basic attacks.
+              - Tactical Command is not used in 221, so Maririn's Command Skill remains available as a normal damage and stagger tool.
           - name: Shurdi
-            level: 12
+            level: 11
             tripods:
               - Shining Growth
               - Bulky Shurdi
@@ -1868,9 +1875,9 @@ builds:
             rune: Bleed
             rune_rarity: legendary
             notes: |-
-              **Main Damage Skill, Self-Crit Rate buff, Destiny Activation**
+              **Main Damage Skill, Self-Crit Rate buff**
               - <tripod>Shining Growth</tripod> provides +11.8% Crit Rate to self, so prioritize maintaining its uptime.
-              - Shurdi applies the Destiny buff.
+              - Keep Shurdi active at all times; minor cooldown loss is acceptable due to its long summon duration.
           - name: Winged Spirit
             level: 11
             tripods:
@@ -1880,9 +1887,9 @@ builds:
             rune: Wealth
             rune_rarity: rare
             notes: |-
-              **Minor Damage Skill**
-              - Long-lasting stationary summon.
-              - Be alert and reposition this skill as the boss moves.
+              **Main Damage Skill**
+              - Strong damage skill so make sure to use it off cooldown.
+              - You can cast it right before using Akir Burst to fit all of its damage under the amplified buff without wasting time casting it.
           - name: Water Elemental
             level: 10
             tripods:
@@ -1892,9 +1899,9 @@ builds:
             rune: Wealth
             rune_rarity: legendary
             notes: |-
-              **Meter Generation Skill, Weak Point Destruction, Counter**
-              - <tripod>MP Recovery</tripod> provides MP to yourself. Keep this on cooldown at all times so you don't run out of mana.
-              - This has the highest meter generation of all your skills.
+              **Weak Point Destruction, Counter, Mana Recovery**
+              - <tripod>MP Recovery</tripod> provides MP to yourself.
+              - Since we get gauge for free from our destiny procs on a fixed 40-second cycle use this primarily for utility rather than gauge generation.
           - name: Igna
             level_label: Hyper Awakening Technique
             notes: |-
@@ -1907,7 +1914,7 @@ builds:
               **Main Damage Skill**
               - Make sure you have Akir Burst when Kelsion is up, as Kelsion gains a huge damage boost from Akir Burst.
               - Use the Command Skill as soon as it comes up, as it does a lot of damage.
-              - Kelsion lasts for 24s, so you should be only using this when you know the boss will not be leaving in that period of time.
+              - Kelsion lasts for 16s, so use it when the boss will remain targetable for most of its duration.
         gems:
           - skill: Maririn
             type: damage
@@ -1994,16 +2001,16 @@ builds:
             points: 10
             category: evolution
             tier: 1
-          - name: Specialization
-            points: 6
-            category: evolution
-            tier: 1
           - name: Swiftness
-            points: 24
+            points: 30
             category: evolution
             tier: 1
+          - name: Keen Sense
+            points: 2
+            category: evolution
+            tier: 2
           - name: Limit Break
-            points: 3
+            points: 1
             category: evolution
             tier: 2
           - name: Zealous Smite
@@ -2031,15 +2038,11 @@ builds:
             category: enlightenment
             tier: 2
           - name: Communication Enhancement
-            points: 1
+            points: 2
             category: enlightenment
             tier: 3
           - name: Elemental's Harmony
             points: 3
-            category: enlightenment
-            tier: 3
-          - name: Ancient Wind
-            points: 1
             category: enlightenment
             tier: 3
           - name: Elemental Burst
@@ -2059,6 +2062,7 @@ builds:
             category: leap
             tier: 2
         arkPassiveTips:
-          - Crit, Specialization and Swiftness can adjusted to your taste, but try to keep above 400 Crit, 400 Specialization and 1500 Swiftness, or less if you're not using Raid Captain, or using the Ancient Wind side node.
-          - Consider running Release Potential over Transcendent Power in a longer fight.
+          - Swiftness 30 is mandatory. 221 does not need Specialization for gauge generation, so put the remaining 10 Evolution stat points into Crit.
+          - Tier 2 Evolution is flexible around your total Crit Rate; use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
+
 ---
