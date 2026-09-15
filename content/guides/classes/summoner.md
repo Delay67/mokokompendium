@@ -1260,7 +1260,7 @@ builds:
             notes: |-
               **Main Damage Skill, High Stagger Skill, Meter Generation Skill**
               - <tripod>Burning Sprint</tripod> is the standard tripod, while <tripod>Destruction Charger</tripod> increases the number of steeds for strong damage, stagger, and meter generation.
-              - Amplified Resonance heavily boosts this skill, so minimize cooldown loss whenever possible.
+              - Amplified Resonance heavily boosts this skill, so try and keep it off cooldown whenever possible.
           - name: Fleeting Gale Bird
             level: 10
             tripods:
@@ -1799,7 +1799,7 @@ builds:
           - Use Winged Spirit right before Akir Burst so all of its damage lands inside the burst window without wasting time casting it during the buff.
           - Akir Burst should be used every 40 seconds when your gauge is refilled, but try to line it up with boss damage windows whenever possible.
           - Akir Burst will refresh all your summons duration when cast.
-          - Steed Charge is one of your strongest burst skills, so try to minimize cooldown loss and fit as many casts as possible inside Akir Burst.
+          - Steed Charge is one of your strongest burst skills, so try to keep it off cooldown and fit as many casts as possible inside Akir Burst.
           - Pauru and Maririn's Command Skills can be used normally, and if possible try to fit Pauru's Command Skill inside Akir Burst.
           - Keep Shurdi active at all times, but with its long duration and frequent Akir Burst refreshes you do not need to spam it off cooldown.
           - Elcid cannot move as she has no legs, if the boss moves make sure to resummon her to keep applying your synergy as well as a decent ammount of DPS.
@@ -1815,7 +1815,7 @@ builds:
             notes: |-
               **Main Damage Skill, High Stagger Skill**
               - Amplified Resonance heavily boosts Steed Charge, making it one of your main burst-window skills.
-              - Minimize cooldown loss and aim to fit as many casts as possible into Akir Burst.
+              - Spam this skill off cooldown and aim to fit as many casts as possible into Akir Burst.
           - name: Fleeting Gale Bird
             level: 10
             tripods:
