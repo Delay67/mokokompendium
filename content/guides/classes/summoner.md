@@ -1016,7 +1016,7 @@ builds:
           - Akir
   - name: Communication Overflow
     engraving: Communication Overflow
-    description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. Highest damage potential with flexible stat allocation.
+    description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability.
     playstyle: Maintain constant uptime with your pet summons, and cast Akir Burst to buff them. Non-directional with flexible positioning.
     difficulty: hard
     preArkGrid:
@@ -1043,7 +1043,7 @@ builds:
           priority: recommended
         - name: Cursed Doll
           priority: optional
-        - name: Hit Master
+        - name: Stabilized Status
           priority: optional
       skills:
         - name: Pauru
@@ -1052,8 +1052,8 @@ builds:
             - Weak Point Detection
             - Atk. Power Enhancement
             - Blue Flame Pauru
-          rune: Wealth
-          rune_rarity: rare
+          rune: Quick Recharge
+          rune_rarity: legendary
           notes: |-
             **Main Damage Skill, Weak Point Destruction**
             - Use the active skill off cooldown.
@@ -1063,7 +1063,7 @@ builds:
             - Atk. Power Enhancement
             - Stagger Command
             - Elemental Blessing
-          rune: Poison
+          rune: Bleed
           rune_rarity: legendary
           notes: |-
             **Main Damage Skill**
@@ -1074,7 +1074,7 @@ builds:
             - Shining Growth
             - Bulky Shurdi
             - Thrilling Light
-          rune: Bleed
+          rune: Poison
           rune_rarity: legendary
           notes: |-
             **Main Damage Skill, Self-Crit Rate buff**
@@ -1085,8 +1085,8 @@ builds:
             - Corrosive Explosion
             - Homing Seeds
             - Elite Summoning
-          rune: Wealth
-          rune_rarity: epic
+          rune: Conviction
+          rune_rarity: legendary
           notes: |-
             **Main Damage Skill, Synergy Application**
             - <tripod>Corrosive Explosion</tripod> applies -12% defense down synergy on enemies.
@@ -1098,8 +1098,8 @@ builds:
             - Magick Enhancement
             - Thunder Spirit
             - Turning Attack
-          rune: Wealth
-          rune_rarity: rare
+          rune: Judgment
+          rune_rarity: legendary
           notes: |-
             **Minor Damage Skill**
             - Long-lasting stationary summon.
@@ -1111,7 +1111,7 @@ builds:
             - Free Flight
             - Mother Gale Bird
           rune: Wealth
-          rune_rarity: rare
+          rune_rarity: epic
           notes: |-
             **Main Damage Skill, Meter Generation Skill**
             - You can build passive gauge from <tripod>Accumulated Energy</tripod> even without hitting any enemies.
@@ -1226,7 +1226,7 @@ builds:
         priority: recommended
       - name: Cursed Doll
         priority: optional
-      - name: Hit Master
+      - name: Stabilized Status
         priority: optional
     variants:
       - name: Elemental Entwinement (111)
@@ -1267,8 +1267,8 @@ builds:
               - Accumulated Energy
               - Free Flight
               - Mother Gale Bird
-            rune: Wealth
-            rune_rarity: rare
+            rune: Judgment
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Meter Generation Skill**
               - You can build passive gauge from <tripod>Accumulated Energy</tripod> even without hitting any enemies.
@@ -1278,8 +1278,8 @@ builds:
               - Corrosive Explosion
               - Deadly Poison Seed
               - Elite Summoning
-            rune: Wealth
-            rune_rarity: epic
+            rune: Conviction
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Synergy Application**
               - <tripod>Corrosive Explosion</tripod> applies -12% defense down synergy on enemies.
@@ -1291,8 +1291,8 @@ builds:
               - Weak Point Detection
               - Atk. Power Enhancement
               - Blue Flame Pauru
-            rune: Wealth
-            rune_rarity: rare
+            rune: Quick Recharge
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Weak Point Destruction**
               - Use the Command Skill regularly, but if Akir Burst is about to start, holding it briefly to land inside the burst window is acceptable.
@@ -1302,7 +1302,7 @@ builds:
               - Atk. Power Enhancement
               - Precision Fire
               - Elemental Blessing
-            rune: Poison
+            rune: Bleed
             rune_rarity: legendary
             notes: |-
               **Main Damage Skill**
@@ -1314,7 +1314,7 @@ builds:
               - Shining Growth
               - Bulky Shurdi
               - Thrilling Light
-            rune: Bleed
+            rune: Poison
             rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Self-Crit Rate buff**
@@ -1327,7 +1327,7 @@ builds:
               - Thunder Spirit
               - Turning Attack
             rune: Wealth
-            rune_rarity: rare
+            rune_rarity: epic
             notes: |-
               **Damage Skill, Destiny Activation**
               - Amplified Entwinement makes Winged Spirit trigger your Destiny Buff, so pre-cast it before entering combat.
@@ -1509,7 +1509,7 @@ builds:
           - Tier 2 Evolution is flexible around your total Crit Rate use Keen Sense below roughly 85% Crit and move points into Limit Break once you are at or above that threshold.
       - name: Basic Training (333)
         difficulty: 1
-        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. A more passive playstyle where you will not be utilizing your pets active abilities. Very comfortable to play and forgiving.
+        description: Extremely high uptime build that transforms Akir into Akir Burst, a pet-buffing ability. A more passive playstyle where you will not be utilizing your pets active abilities outside of stagger or weakpoint checks. Very comfortable to play and forgiving.
         stats: Crit 6/30, Specialization 4/30, Swiftness 30/30
         arkgrid_cores: Basic Training + Ever-Changing Gale + Tactical Command
         arkgrid_prose: |-
@@ -1544,7 +1544,7 @@ builds:
               - Free Flight
               - Mother Gale Bird
             rune: Wealth
-            rune_rarity: rare
+            rune_rarity: epic
             notes: |-
               **Main Damage Skill, Meter Generation Skill**
               - Basic Training and Ever-Changing Gale both heavily buff Fleeting Gale Bird's damage making it a main DPS skill.
@@ -1556,8 +1556,8 @@ builds:
               - Corrosive Explosion
               - Deadly Poison Seed
               - Elite Summoning
-            rune: Wealth
-            rune_rarity: epic
+            rune: Conviction
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Synergy Application**
               - <tripod>Corrosive Explosion</tripod> applies -12% defense down synergy on enemies.
@@ -1569,8 +1569,8 @@ builds:
               - Weak Point Detection
               - Atk. Power Enhancement
               - Blue Flame Pauru
-            rune: Wealth
-            rune_rarity: rare
+            rune: Poison
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Weak Point Destruction**
               - Basic Training and Tactical Command focus Pauru on its basic attacks, so do not use the Command Skill for damage.
@@ -1581,7 +1581,7 @@ builds:
               - Atk. Power Enhancement
               - Stagger Command
               - Elemental Blessing
-            rune: Poison
+            rune: Bleed
             rune_rarity: legendary
             notes: |-
               **Main Damage Skill, High Stagger Skill**
@@ -1593,7 +1593,7 @@ builds:
               - Shining Growth
               - Bulky Shurdi
               - Thrilling Light
-            rune: Bleed
+            rune: Judgment
             rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Self-Crit Rate buff**
@@ -1810,8 +1810,8 @@ builds:
               - Burning Sprint
               - Weak Point Detection
               - Destruction Charger
-            rune: Wealth
-            rune_rarity: epic
+            rune: Galewind
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, High Stagger Skill**
               - Amplified Resonance heavily boosts Steed Charge, making it one of your main burst-window skills.
@@ -1822,8 +1822,8 @@ builds:
               - Accumulated Energy
               - Free Flight
               - Mother Gale Bird
-            rune: Wealth
-            rune_rarity: rare
+            rune: Judgment
+            rune_rarity: legendary
             notes: |-
               **Damage Skill**
               - 221 receives its Ancient Energy on a fixed 40-second cycle, so Fleeting Gale Bird is used primarily for damage rather than gauge generation.
@@ -1833,8 +1833,8 @@ builds:
               - Corrosive Explosion
               - Deadly Poison Seed
               - Elite Summoning
-            rune: Wealth
-            rune_rarity: epic
+            rune: Conviction
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Synergy Application**
               - <tripod>Corrosive Explosion</tripod> applies -12% defense down synergy on enemies.
@@ -1846,8 +1846,8 @@ builds:
               - Weak Point Detection
               - Atk. Power Enhancement
               - Blue Flame Pauru
-            rune: Wealth
-            rune_rarity: rare
+            rune: Quick Recharge
+            rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Weak Point Destruction**
               - Use the Command Skill regularly and prioritize landing it during Akir Burst when available.
@@ -1857,7 +1857,7 @@ builds:
               - Atk. Power Enhancement
               - Precision Fire
               - Elemental Blessing
-            rune: Poison
+            rune: Bleed
             rune_rarity: legendary
             notes: |-
               **Main Damage Skill**
@@ -1869,7 +1869,7 @@ builds:
               - Shining Growth
               - Bulky Shurdi
               - Thrilling Light
-            rune: Bleed
+            rune: Poison
             rune_rarity: legendary
             notes: |-
               **Main Damage Skill, Self-Crit Rate buff**
@@ -1881,7 +1881,7 @@ builds:
               - Magick Enhancement
               - Thunder Spirit
               - Turning Attack
-            rune: Wealth
+            rune: Quick Recharge
             rune_rarity: rare
             notes: |-
               **Main Damage Skill**
@@ -1893,8 +1893,8 @@ builds:
               - MP Recovery
               - Weak Point Detection
               - Water Cannon
-            rune: Wealth
-            rune_rarity: legendary
+            rune: Quick Recharge
+            rune_rarity: epic
             notes: |-
               **Weak Point Destruction, Counter, Mana Recovery**
               - <tripod>MP Recovery</tripod> provides MP to yourself.
