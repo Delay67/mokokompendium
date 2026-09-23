@@ -1507,7 +1507,7 @@ builds:
             points: 3
             category: enlightenment
             tier: 3
-          - name: Primodial Energy
+          - name: Primordial Energy
             points: 2
             category: enlightenment
             tier: 3
