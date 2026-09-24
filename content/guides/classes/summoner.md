@@ -1777,7 +1777,7 @@ builds:
             points: 5
             category: leap
             tier: 1
-          - name: Igna's Breath
+          - name: Tame
             points: 3
             category: leap
             tier: 2
